@@ -2,3 +2,7 @@
 <mia-table #tableComp [config]="tableConfig" [mockData]="mockData"></mia-table>
 
 <button class="openModal()">Add New</button>
+<div class="content">
+    <mia-form #miaForm [config]="config" [item]="item" (save)="onSubmit($event)"></mia-form>
+    <button (click)="onClickSend()">Enviar</button>
+</div>
